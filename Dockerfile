@@ -14,7 +14,7 @@ RUN pip3 install -r requirements.txt
 USER spark
 
 # Copy app code
-COPY . .
+COPY main.py .
 
 # Execute the python code
 CMD ["python3", "main.py"]
